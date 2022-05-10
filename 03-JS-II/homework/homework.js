@@ -202,11 +202,11 @@ function doWhile(numero) {
   //Retornar el valor final.
   //Usar el bucle do ... while.
   let a = numero;
-  let i = 1;
+  let i = 0;
   do {
     i = i++;
     a = a + 5;
-  } while (i < 9);
+  } while (i < 8);
   return a;
 }
 
