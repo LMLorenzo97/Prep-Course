@@ -70,10 +70,9 @@ function arrayContiene(array, elemento) {
   for(var i = 0; i < array.lenght; i++) {
     if (array[i] === elemento) {
       return true;
-    } else {
-        return false;
-    }
+    }    
   }
+  return false;
 }
 
 
