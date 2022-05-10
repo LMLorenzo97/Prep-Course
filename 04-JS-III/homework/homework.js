@@ -209,7 +209,7 @@ function mesesDelAño(array) {
   if (mesBuscado.length < 3) {
     return "No se encontraron los meses pedidos";
   } else {
-      return mesBuscado
+      return mesBuscado;
   }
 }
 
@@ -218,6 +218,13 @@ function mayorACien(array) {
   //La función recibe un array con enteros entre 0 y 200. Recorrer el array y guardar en un nuevo array sólo los
   //valores mayores a 100 (no incluye el 100). Finalmente devolver el nuevo array.
   // Tu código:
+  var nuevoArray = [];
+  for (var i = 0; i < array; i++) {
+    if (array[i] > 100) {
+      nuevoArray.push(array[i]);
+    }
+  }
+  return nuevoArray;
 }
 
 
@@ -229,6 +236,21 @@ function breakStatement(numero) {
   //devolver: "Se interrumpió la ejecución"
   //Pista: usá el statement 'break'
   // Tu código:
+  let array = [];
+  let suma = numero;
+  for(var i = 0; i < 10; i++) {
+    suma = suma + 2 
+      if (suma === i) {
+        break;
+      } else {
+        array.push(suma);
+      }
+    }
+      if(i < 10){
+       return "Se interrumpió la ejecucion";
+      } else {
+          return array;
+      }
 }
 
 
@@ -239,6 +261,17 @@ function continueStatement(numero) {
   //Cuando el número de iteraciones alcance el valor 5, no se suma en ese caso y se continua con la siguiente iteración
   //Pista: usá el statement 'continue'
   // Tu código:
+  var array= [];
+  var suma = numero;
+  for(var i = 0; i < 10; i++) {
+    suma = suma + 2
+    if (i === 5) {
+      continue;
+    } else {
+        array.push(suma);
+    }
+  }
+  return array;
 }
 
 
