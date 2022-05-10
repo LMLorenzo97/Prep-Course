@@ -17,7 +17,7 @@ function devolverUltimoElemento(array) {
 function obtenerLargoDelArray(array) {
   // Devuelve el largo de un array
   // Tu código:
-  return array.lenght;
+  return array.length;
 }
 
 
@@ -27,7 +27,7 @@ function incrementarPorUno(array) {
   // y devuelve el array
   // Tu código:
   let arrayDos = [];
-  for (var i = 0; i < array.lenght; i++) {
+  for (var i = 0; i < array.length; i++) {
     nuevoArray[i] = array[i] + 1;
   }
   return arrayDos;
@@ -80,6 +80,11 @@ function agregarNumeros(numeros) {
   // "numeros" debe ser un arreglo de enteros (int/integers)
   // Suma todos los enteros y devuelve el valor
   // Tu código:
+  var resultado = 0;
+  for(var i = 0; i < numeros.length; í++) {
+    resultado = resultado + numeros[i];
+  }
+  return resultado;
 }
 
 
@@ -87,6 +92,11 @@ function promedioResultadosTest(resultadosTest) {
   // "resultadosTest" debe ser una matriz de enteros (int/integers)
   // Itera (en un bucle) los elementos del array, calcula y devuelve el promedio de puntajes
   // Tu código:
+  var promedio = 0;
+  for(var i = 0; i < promedioResultadosTest.length; i++) {
+    promedio = promedio + promedioResultadosTest[i];
+  }
+  return promedio / promedioResultadosTest.length;
 }
 
 
