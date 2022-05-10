@@ -132,10 +132,10 @@ function cuentoElementos(arreglo){
  var elementos
  for (var i = 0; i < arreglo.length; i++) {
    if (arreglo[i] > 18) {
-     elementos.push(arreglo[i]);
+     elementos++;
    }
  }
- return elementos.length;
+ return elementos;
 }
 
 
