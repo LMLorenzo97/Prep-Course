@@ -135,7 +135,7 @@ function cuentoElementos(arreglo){
      elementos.push(cuentoElementos[i]);
    }
  }
- return elementos;
+ return elementos.length;
 }
 
 
