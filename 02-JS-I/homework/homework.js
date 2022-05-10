@@ -165,8 +165,9 @@ function esPositivo(numero) {
     return(console.log("Es positivo"));
   } else if (numero < 0) {
       return(console.log("Es negativo"));
-    } else 
-        return(false);
+    } else if (numero === 0) {
+        return(false); 
+      }
 }
 
 function agregarSimboloExclamacion(str) {
