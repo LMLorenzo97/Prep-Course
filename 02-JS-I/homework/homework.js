@@ -188,7 +188,7 @@ function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
-  return "hola " + nombre + "!";
+  return "Hola" + " " + nombre + "!";
 }
 
 function obtenerAreaRectangulo(alto, ancho) {
@@ -201,7 +201,7 @@ function obtenerAreaRectangulo(alto, ancho) {
 function retornarPerimetro(lado){
   //Escibe una función a la cual reciba el valor del lado de un cuadrado y retorne su perímetro.
   //Escribe tu código aquí
-  return lado * lado;
+  return lado * 4;
 }
 
 
