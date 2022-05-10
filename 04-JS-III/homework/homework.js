@@ -17,7 +17,7 @@ function devolverUltimoElemento(array) {
 function obtenerLargoDelArray(array) {
   // Devuelve el largo de un array
   // Tu código:
-  return array.lenght();
+  return array.lenght;
 }
 
 
@@ -26,7 +26,7 @@ function incrementarPorUno(array) {
   // Aumenta cada entero por 1
   // y devuelve el array
   // Tu código:
-  let arrayDos = []
+  let arrayDos = [];
   for (var i = 0; i < array.lenght; i++) {
     nuevoArray[i] = array[i] + 1;
   }
@@ -48,6 +48,8 @@ function agregarItemAlComienzoDelArray(array, elemento) {
   // y devuelve el array
   // Pista: usa el método `.unshift`
   // Tu código:
+  array.unshift(elemento);
+  return array;
 }
 
 
@@ -57,6 +59,11 @@ function dePalabrasAFrase(palabras) {
   // con espacios entre cada palabra
   // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'
   // Tu código:
+  let string;
+  for(var i = 0; i < palabras.lenght; i++) {
+    string = " " + palabras.shift[i]
+  }
+  return string;
 }
 
 
