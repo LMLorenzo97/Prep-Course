@@ -129,13 +129,20 @@ function multiplicarArgumentos() {
 function cuentoElementos(arreglo){
   //Realiza una función que retorne la cantidad de los elementos del arreglo cuyo valor es mayor a 18.
   //Escribe tu código aquí
- var elementos
- for (var i = 0; i < arreglo.length; i++) {
-   if (arreglo[i] > 18) {
-     elementos++;
-   }
- }
- return elementos;
+  //var elementos
+  //for (var i = 0; i < arreglo.length; i++) {
+  //if (arreglo[i] > 18) {
+  //elementos++;
+  // }
+  //}
+  //return elementos;
+  let contador = 0;
+  for (let i = 0; i < arreglo.length ; i++) {
+    if(arreglo[i] > 19){
+      contador++
+    }
+  }
+  return contador
 }
 
 
