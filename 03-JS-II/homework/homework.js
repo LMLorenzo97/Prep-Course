@@ -190,7 +190,7 @@ function tablaDelSeis(){
 function tieneTresDigitos(numero){
   //Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false.
   //Escribe tu código aquí
-  if (numero >= 100 && numero % 1 === 0) {
+  if (numero >= 100 && numero < 1000) {
     return true;
   } else {
     return false;
@@ -201,11 +201,13 @@ function doWhile(numero) {
   //Implementar una función tal que vaya aumentando el valor recibido en 5 hasta un límite de 8 veces
   //Retornar el valor final.
   //Usar el bucle do ... while.
+  let a = numero;
   let i = 1;
   do {
     i = i++;
-    numero + 5;
+    a = a + 5;
   } while (i < 9);
+  return a;
 }
 
 
